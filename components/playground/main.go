@@ -442,9 +442,9 @@ func populateDefaultOpt(flagSet *pflag.FlagSet) error {
 		defaultInt(&options.TiKV.Num, "kv", 1)
 		defaultInt(&options.TiCIMeta.Num, "tici.meta", 1)
 		defaultInt(&options.TiCIWorker.Num, "tici.worker", 1)
-		// TODO: enable TiCDC in NextGenFTS mode
-		// defaultInt(&options.TiCDC.Num, "ticdc", 1)
+		defaultInt(&options.TiCDC.Num, "ticdc", 1)
 		options.ShOpt.CreateChangefeed = false
+		defaultInt(&options.TiFlash.Num, "tiflash", 1)
 		defaultStr(&options.TiDBSystem.BinPath, "db.system.binpath", options.TiDB.BinPath)
 		defaultInt(&options.TiFlashWrite.Num, "tiflash.write", options.TiFlash.Num)
 		defaultStr(&options.TiFlashWrite.BinPath, "tiflash.write.binpath", options.TiFlash.BinPath)

@@ -1,0 +1,23 @@
+
+log-file = "/DATA/disk1/jinhelin/.tiup/data/ng_play/tiflash-0/log/tiflash_tikv.log"
+
+[rocksdb]
+wal-dir = ""
+max-open-files = 256
+
+[security]
+ca-path = ""
+cert-path = ""
+key-path = ""
+
+[server]
+addr = "0.0.0.0:20170"
+advertise-addr = "127.0.0.1:20170"
+engine-addr = "127.0.0.1:3930"
+status-addr = "127.0.0.1:20292"
+
+[storage]
+data-dir = "/DATA/disk1/jinhelin/.tiup/data/ng_play/tiflash-0/flash"
+
+[raftdb]
+max-open-files = 256

@@ -1,0 +1,21 @@
+[tici.s3]
+endpoint = "http://localhost:9000"
+region = "us-east-1"
+access_key = "minioadmin"
+secret_key = "minioadmin"
+use_path_style = true
+
+[tici.reader_node]
+addr = "127.0.0.1:38520"
+heartbeat_interval = "3s"
+max_heartbeat_retries = 3
+
+[tici.frag_reader]
+local_data_path = "frag_local_data"
+doc_store_cache_size = "16MB"
+
+[logger]
+level="info"
+
+[flash.proxy]
+config = "/DATA/disk1/jinhelin/tiup/tiflash-learner.toml"
